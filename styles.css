@@ -256,6 +256,30 @@ section p {
     color: var(--primary-color);
 }
 
+.contact-line {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.contact-line .material-symbols-outlined {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+}
+
+.contact-line p {
+    margin: 0;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24;
+}
+
 .map-embed {
     margin-top: 16px;
     border-radius: 12px;

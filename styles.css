@@ -12,8 +12,7 @@
 body {
     margin: 0;
     font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    color: #1f2933;
-    background: #f7f9fc;
+    background: #9B85AD;/*#f7f9fc*/
     line-height: 1.6;
 }
 
@@ -28,17 +27,28 @@ a:focus {
 }
 
 header {
-    background: linear-gradient(135deg, var(--primary-color-dark) 0%, var(--primary-color-light) 100%);
+    background: linear-gradient(180deg, #ffffff 0%, #ffffff 25%, #9B85AD 90%);
     color: #ffffff;
     padding: 64px 16px 96px;
     text-align: center;
 }
 
 header h1 {
-    font-size: clamp(2.5rem, 4vw, 3.75rem);
-    margin-bottom: 16px;
-    font-weight: 700;
-    letter-spacing: 1px;
+    margin: 0 auto 24px;
+    font-size: 0;
+}
+
+.brand {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.logo {
+    max-width: 480px;
+    width: min(100%, 480px);
+    height: auto;
 }
 
 header p {
@@ -46,6 +56,7 @@ header p {
     margin: 0 auto 32px;
     font-size: clamp(1.1rem, 2.5vw, 1.35rem);
     font-weight: 300;
+    color: #000000;
 }
 
 .cta-buttons {
@@ -271,7 +282,7 @@ section p {
 footer {
     text-align: center;
     padding: 24px;
-    color: #5f6c7b;
+    color: #ffffff;
     font-size: 0.9rem;
 }
 

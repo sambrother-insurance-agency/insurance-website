@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="Sambrother Insurance Agency is a local, independent insurance agency in Lewisville, Texas. We help individuals and families with home, auto, and life insurance — personalized guidance from agent Sam Mathew.">
         <meta name="author" content="Sambrother Insurance Agency">
-        <meta name="description" content="Affordable insurance plans for your family and business. Sambrother Insurance — trusted advisors in coverage and claims.">
+        <meta name="description" content="Affordable insurance plans for your family and business. Sambrother Insurance Agency — trusted advisors in coverage and claims.">
         <meta name="keywords" content="insurance, life insurance, auto insurance, home insurance, Texas insurance agency, Lewisville insurance agency">
         <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
@@ -36,7 +36,11 @@
             <p>Guiding individuals and families to the right protection, personalized coverage options, and compassionate support when it matters most.</p>
             <div class="cta-buttons">
                 <a class="cta-button primary" href="tel:+19729745770">Call Sam Mathew</a>
-                <a class="cta-button secondary" href="#contact">Get in Touch</a>
+                <a class="cta-button secondary" href="javascript:void(0)" id="contactBtn">Contact Details</a>
+                <a class="cta-button secondary" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeg8r3H4xJKCu0bABiDXCgk2aoXNHMa4R_Qzx4Sv6oG0dL7cg/viewform?usp=sharing&ouid=108371466001279032802">
+                    <span class="material-symbols-outlined" aria-hidden="true">open_in_new</span>
+                    &nbsp;Open Consultation Form
+                </a>
             </div>
         </header>
         <main>
@@ -87,41 +91,45 @@
                 </ul>
             </section>
             <section id="contact">
-                <h2>Get in Touch</h2>
+                <h2>Contact Details</h2>
                 <div class="contact-grid">
                     <div class="contact-card">
                         <h3>Office Hours</h3>
-                        <p>Monday – Friday: 9:00 AM – 5:00 PM</p>
+                        <p>Monday to Friday: 9:00 AM to 5:00 PM</p>
                         <p>Saturday: Closed</p>
                         <p>Sunday: Closed</p>
                     </div>
                     <div class="contact-card">
                         <h3>Connect</h3>
                         <div class="contact-line">
-                            <span class="material-symbols-outlined" aria-hidden="true">call</span>
-                            <p><strong>Office:</strong> <a href="tel:+14697066820">(469) 706-6820</a></p>
-                        </div>
-                        <div class="contact-line">
                             <span class="material-symbols-outlined" aria-hidden="true">smartphone</span>
                             <p><strong>Cell:</strong> <a href="tel:+19729745770">(972) 974-5770</a></p>
                         </div>
                         <div class="contact-line">
-                            <span class="material-symbols-outlined" aria-hidden="true">mail</span>
-                            <p><strong>Email:</strong> <a href="mailto:sambrotherinsurance@gmail.com">sambrotherinsurance@gmail.com</a></p>
+                            <span class="material-symbols-outlined" aria-hidden="true">call</span>
+                            <p><strong>Office:</strong> <a href="tel:+14697066820">(469) 706-6820</a></p>
                         </div>
                         <div class="contact-line">
-                            <span class="material-symbols-outlined" aria-hidden="true">calendar_month</span>
-                            <p><strong>Schedule:</strong> <a href="mailto:sambrotherinsurance@gmail.com?subject=Consultation%20Request">Request a consultation</a></p>
+                            <span class="material-symbols-outlined" aria-hidden="true">mail</span>
+                            <p><strong>Email:</strong> <a href="mailto:sam@sambrotherinsurance.com">sam@sambrotherinsurance.com</a></p>
                         </div>
+                    </div>
+                </div>
+                <div class ="contact-grid">
+                    <div class="contact-card">
+                        <h3>Consultation Form</h3>
+                        <p>Share a few details and we will follow up quickly to tailor coverage options for you.</p>
+                        <a class="cta-button primary" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeg8r3H4xJKCu0bABiDXCgk2aoXNHMa4R_Qzx4Sv6oG0dL7cg/viewform?usp=sharing&ouid=108371466001279032802">
+                            <span class="material-symbols-outlined" aria-hidden="true">open_in_new</span>
+                            &nbsp;Open Consultation Form
+                        </a>
                     </div>
                 </div>
                 <div class="contact-grid">
                     <div class="contact-card">
                         <h3>Office Address</h3>
-                        <p>4400 State Hwy 121, Suite 300</p>
-                        <p>Lewisville, TX 75056</p>
+                        <p>Sambrother Insurance Agency LLC</br>4400 State Hwy 121, Suite 300</br>Lewisville, TX 75056</p>
                         <p>Inside Venture X - The Realm</p>
-                        <p>Parking available behind the building.</p>
                         <div class="map-embed" aria-label="Map showing the Sambrother Insurance Agency office location">
                             <iframe
                             title="Sambrother Insurance Agency on Google Maps"
@@ -137,19 +145,6 @@
                     </div>
                 </div>
             </section>
-            <section id="consult">
-                <h2>Consultation Form</h2>
-                <p>Share a few details and we will follow up quickly to tailor coverage options for you.</p>
-                <div class="form-embed">
-                    <iframe
-                        src="https://docs.google.com/forms/d/e/1FAIpQLSeg8r3H4xJKCu0bABiDXCgk2aoXNHMa4R_Qzx4Sv6oG0dL7cg/viewform?embedded=true"
-                        title="Request a consultation"
-                        loading="lazy"
-                        referrerpolicy="no-referrer">
-                        Loading…
-                    </iframe>
-                </div>
-            </section>
         </main>
         <footer>
             &copy; <span id="year"></span> Sambrother Insurance Agency. All rights reserved.
@@ -159,6 +154,13 @@
             if (yearElement) {
                 yearElement.textContent = new Date().getFullYear();
             }
+        </script>
+        <script>
+            document.getElementById("contactBtn").addEventListener("click", function () {
+                document.getElementById("contact").scrollIntoView({
+                    behavior: "smooth"
+                });
+            });
         </script>
     </body>
 </html>
